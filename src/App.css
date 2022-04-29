@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    background-image: linear-gradient(45deg, tomato, orange, yellow);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+      height: 100vh;
+      width: 90vw;
+      box-sizing: border-box;
+      background-repeat:no-repeat ;
+      background-size: cover;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  h4 {
+    font-weight: 600;
+    color: rgba(66, 24, 163, 0.925);
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+    font-size: 1.8rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  form {
+
+    max-width: 400px;
+    margin: 0 auto;
   }
-}
+  
+  p {
+    color: black;
+    font-weight: 500;
+  }
+  
+  p::before {
+    display: inline;
+    content: "⚠ ";
+  }
+  
+  input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+  }
+  
+  input[type="submit"] {
+    background: #ec5990;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 7px;
+    border-radius: 15px;
+  }
+  
+  
+  input[type="submit"]:hover {
+    background: #bf1650;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    
+  }
+  
+
+  input[type="submit"]:active {
+    transition: 0.3s all;
+    box-shadow: 2px 2px 2px 2px rgba(107, 67, 67, 0.705);
+  }
+  
+  input:disabled {
+    opacity: 0.4;
+  }
+  
+  
+
+  
+
+  
+
+  
